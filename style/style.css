@@ -29,8 +29,8 @@ section {
 }
 
 
-.logo-gradient{
-    background: linear-gradient( 95deg, #F7E93F, #FB09B4, #9100F8);
+.logo-gradient {
+    background: linear-gradient(95deg, #F7E93F, #FB09B4, #9100F8);
     background-clip: text;
     color: transparent;
 }
@@ -40,6 +40,7 @@ section {
 }
 
 .text {
+    color: rgba(255, 255, 255, 0.836);
     font-size: 16px;
     line-height: 24px;
 }
@@ -60,14 +61,9 @@ section {
     transform: scale(1.15);
 }
 
-.content h1 {
-    font-size: 60px;
+.heading {
+    font-size: 48px;
     text-align: center;
-}
-
-.content p {
-    text-align: center;
-    margin-bottom: 24px;
 }
 
 
@@ -127,6 +123,16 @@ nav .btn {
     align-items: center;
 }
 
+.banner-content h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.banner-content p {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 .banner-btn {
     display: flex;
     justify-content: center;
@@ -144,11 +150,50 @@ nav .btn {
 }
 
 
+/* about section  */
+
+#about .content .text {
+    margin-top: 16px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.about-earning {
+    padding: 80px 0 120px;
+    text-align: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.content .text{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about .box h1 {
+    font-size: 48px;
+    color: #00FF88;
+    text-transform: uppercase;
+}
+
+#about .box p {
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+
+
+
 /* mobile  */
 @media screen and (max-width:576px) {
 
     section {
-    padding: 0px 0;
+        padding: 20px 0;
+    }
+
+    .heading {
+    font-size: 32px;
+    text-align: center;
     }
 
 
@@ -179,7 +224,6 @@ nav .btn {
 
     .banner-img {
         width: 50%;
-        height: 200px;
         background: url("../assets/hero-circle.png") no-repeat;
         background-position: center;
         background-size: 180px;
@@ -190,8 +234,42 @@ nav .btn {
         align-items: center;
         margin: 0 auto;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 80px;
+    }
+
+    /* about section  */
+    #about {
+        padding: 200px 10px 20px ;
+    }
+
+    .about-earning{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .about-earning .box{
+        width: 40%;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+
+
+
+    .about-earning{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .about-earning .box{
+        width: 40%;
     }
 
 
@@ -200,4 +278,8 @@ nav .btn {
 
 
 
-@media screen and (main-width:576px) and (max-width:992px) {}
+
+
+.hide {
+    display: none !important;
+}
