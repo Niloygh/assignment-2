@@ -40,7 +40,7 @@ section {
 }
 
 .text {
-    color: rgba(255, 255, 255, 0.836);
+    color: rgba(255, 255, 255, 0.685);
     font-size: 16px;
     line-height: 24px;
 }
@@ -184,7 +184,7 @@ nav .btn {
     background-color: #230E3D;
 }
 
-#choose h5{
+#choose h5 {
     padding: 10px 0;
     font-size: 24px;
 }
@@ -200,7 +200,7 @@ nav .btn {
 #choose .card {
     background: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
-    
+
 }
 
 
@@ -222,37 +222,44 @@ nav .btn {
     grid-row: span 1;
 }
 
-.card5{
+.card5 {
     padding: 20px 40px;
 }
-.card6{
+
+.card6 {
     padding: 20px 40px;
 }
 
 
 /* .features section  */
-#feature .feature-video{
+#feature .feature-video {
     gap: 30px;
     margin-top: 40px;
 }
-#feature .card{
+
+#feature .card {
     background-color: #250D44;
     border-radius: 24px;
 }
-#feature .card iframe{
+
+#feature .card iframe {
     width: 100%;
-    border-radius: 24px 24px 0 0 ;
+    border-radius: 24px 24px 0 0;
 }
-#feature .card-content{
+
+#feature .card-content {
     padding: 24px;
 }
-#feature .card-content h2{
+
+#feature .card-content h2 {
     font-size: 24px;
 }
-#feature .card-content .text{
-    margin: 12px 0 ;
+
+#feature .card-content .text {
+    margin: 12px 0;
 }
-#feature .card-content .time{
+
+#feature .card-content .time {
     color: #00FF88;
     display: flex;
     gap: 10px;
@@ -260,26 +267,64 @@ nav .btn {
 
 
 /* host section  */
-#host .host-img-content{
+#host .host-img-content {
     margin-top: 40px;
     background-color: #250D44;
     border-radius: 40px;
     gap: 24px;
     padding: 24px;
 }
-#host .content h2{
+
+#host .content h2 {
     margin-top: 10px;
     font-size: 32px;
 }
-#host .content .text{
+
+#host .content .text {
     margin: 16px 0;
 }
-#host .content .social img{
-    width: 50px;
-    padding: 15px;
-    object-fit: cover;
+
+#host .social{
+    gap: 20px;
+}
+
+#host .social img{
+    width: 20px;
+    height: 20px;
+}
+
+.border {
+    padding: 10px;
     border: 1px solid #806d9b;
-    border-radius: ;
+    border-radius: 50%;
+}
+
+/* footer section  */
+.footer-container {
+    text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 0;
+    background: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer .logo {
+    font-size: 70px;
+}
+
+.footer-social {
+    justify-content: center;
+    gap: 40px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+footer .footer-icon {
+    gap: 10px;
+    object-fit: cover;
 }
 
 
@@ -291,7 +336,8 @@ nav .btn {
         padding: 20px 0;
     }
 
-    .feature-video, .host-img-content{
+    .feature-video,
+    .host-img-content {
         flex-direction: column;
     }
 
@@ -364,19 +410,19 @@ nav .btn {
     }
 
     #choose .content {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
-    
+
     #choose .card {
-    padding: 40px;
-    margin: 0 20px;
+        padding: 40px;
+        margin: 0 20px;
     }
 
     .row {
-    padding: 105px 40px;
-    grid-row: span 1;
-    grid-column: span 1;
+        padding: 105px 40px;
+        grid-row: span 1;
+        grid-column: span 1;
     }
 
     .cols {
@@ -389,18 +435,60 @@ nav .btn {
         grid-row: span 1;
     }
 
-    #choose h5{
+    #choose h5 {
         font-size: 22px;
     }
 
-    .host-img-content{
+    .host-img-content {
         text-align: center;
     }
 
-    .host-img-content .img img{
+    .host-img-content .img img {
         width: 200px;
         height: 200px;
     }
+    #host .social{
+    gap: 20px;
+    justify-content: center
+    }
+
+    /* footer section   */
+
+    .footer-container {
+        width: 100%;
+        background-size: contain;
+       
+    }
+
+
+
+
+
+    /* .footer-container {
+        padding: 0px 0;
+        max-width: 120vh;
+        background-size: contain;
+        height: 20vh;
+    } */
+
+    footer .logo {
+        font-size: 60px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        object-fit: cover;
+    }
+
+    footer .footer-icon {
+        gap: 10px;
+        object-fit: cover;
+    }
+
 
 }
 
@@ -421,11 +509,10 @@ nav .btn {
     }
 
     #choose .content {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
-    
 
 
 }
