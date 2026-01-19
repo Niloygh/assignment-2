@@ -29,6 +29,12 @@ section {
 }
 
 
+.logo-gradient{
+    background: linear-gradient( 95deg, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    color: transparent;
+}
+
 .flex {
     display: flex;
 }
