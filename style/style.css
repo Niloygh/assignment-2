@@ -97,10 +97,31 @@ nav .btn {
 }
 
 .underline {
-    border-bottom: 1px solid #806d9b;
+    border-bottom: 1px solid #806d9b86;
 }
 
 /* banner section  */
+.new-d{
+    position: relative;
+}
+.new{
+    
+    position: absolute;
+    background: #00FF88;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 38px;
+    box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    
+    top: 30px;
+    left: 54%;
+}
 
 .banner-container {
     max-width: 1600px;
@@ -145,15 +166,16 @@ nav .btn {
 }
 
 .btn2 {
-    border: 1px solid white;
+    border: 1px solid #00FF88;
     background: none;
+    color: #00FF88;
 }
 
 
 /* about section  */
 
 #about .content .text {
-    max-width: 700px;
+    max-width: 720px;
     margin: 16px auto 80px;
     text-align: center;
 }
@@ -165,7 +187,6 @@ nav .btn {
     justify-content: center;
 }
 
-#about .content .text {}
 
 #about .box h1 {
     font-size: 48px;
@@ -369,6 +390,25 @@ footer .footer-icon {
         align-items: center;
     }
 
+    .new{
+    position: relative;
+    background: #00FF88;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 38px;
+    box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    
+    
+    top: 120px;
+    left: 56%;
+}
+
     .banner-container {
         width: 100%;
         margin: 0 auto;
@@ -510,6 +550,24 @@ footer .footer-icon {
 @media screen and (min-width:576px) and (max-width:992px) {
 
 
+    .new{
+    
+    position: absolute;
+    background: #00FF88;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 38px;
+    box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    
+    top: 30px;
+    left: 58%;
+    }
 
 
     .about-earning {
